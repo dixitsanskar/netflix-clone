@@ -2,29 +2,29 @@ import tw, { styled } from "twin.macro";
 
 export const MoviesContainer = styled.div`
   ${tw`
-    my-8
+    my-8  //top and bottom margin my with 1 rem.
   `}
 `;
 
 export const MoviesTitle = styled.h2`
   ${tw`
-      text-2xl
-      font-bold
-      uppercase
-      mx-8
+      text-2xl  // bigger font size 
+      font-bold // weight increase
+      uppercase // movie title uppercase
+      mx-8 // two rem left, and a right margin
     `}
 `;
 
 export const MoviesRow = styled.div`
   ${tw`
-      flex
-      overflow-x-auto
-      mt-4
-      p-4
+      flex //flexbox
+      overflow-x-auto //scroll left and right
+      mt-4 //one rem top margin
+      p-4 //one rem padding
     `}
 
   &::-webkit-scrollbar {
-    display: none;
+    display: none;  //hides scroll bar
   }
 `;
 
@@ -37,6 +37,7 @@ export const MoviesPoster = styled.img`
   // Scale the movie img when the user hover on it
   transition: all 0.2s;
   &:hover {
-    transform: scale(1.09);
+    transform: scale(1.09); 
+    // hover transition over movie poster
   }
 `;
