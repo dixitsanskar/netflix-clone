@@ -5,7 +5,7 @@ import {
   MoviesRow,
   MoviesTitle,
 } from "./Movies.styles";
-
+// movie container component
 function Movies({ title, movies }) {
   return (
     <MoviesContainer>
