@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HeaderContainer } from "./Header.styles";
-
+// will show dark netflix header after scrolling
 function Header() {
   const [isDark, setIsDark] = useState(false);
 
@@ -15,7 +15,7 @@ function Header() {
       window.removeEventListener("scroll");
     };
   }, []);
-
+//header will show netflix logo
   return (
     <HeaderContainer dark={isDark}>
       <img
