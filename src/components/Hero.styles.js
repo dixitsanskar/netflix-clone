@@ -2,13 +2,13 @@ import tw, { styled } from "twin.macro";
 
 export const HeroContainer = styled.div`
   ${tw`
-    p-8
+    p-8  //padding 
   `}
-  height: 80vh;
+  height: 80vh;  // height of container
   background-size: cover !important;
 
   ${(props) =>
-    `background: url('https://image.tmdb.org/t/p/original${props.background}');`}
+    `background: url('https://image.tmdb.org/t/p/original${props.background}');`}  // background movie immage
 `;
 
 export const HeroTitle = styled.h1`
